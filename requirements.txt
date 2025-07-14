@@ -1,0 +1,7 @@
+streamlit
+requests
+Pillow
+replicate
+PyPDF2
+google-generativeai
+gtts
