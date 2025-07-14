@@ -3,12 +3,12 @@ from utils.chat import chat_tab
 from utils.image_editor import image_editor_tab
 from utils.image_gen import image_gen_tab
 from utils.video import video_tab
-from utils/voice import voice_tab
-from utils/pdf import pdf_tab
-from utils/music import music_tab
-from utils/avatar import avatar_tab
-from utils/search import search_tab
-from utils/code_assistant import code_tab
+from utils.voice import voice_tab
+from utils.pdf import pdf_tab
+from utils.music import music_tab
+from utils.avatar import avatar_tab
+from utils.search import search_tab
+from utils.code_assistant import code_tab
 from utils.settings import settings_tab
 
 st.set_page_config(page_title="Daniel😎 AI", page_icon="🤖")
