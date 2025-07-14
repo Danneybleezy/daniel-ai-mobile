@@ -4,7 +4,7 @@ import replicate
 def voice_tab():
     st.header("🎤 Voice Assistant")
 
-    text = st.text_input("Enter text to convert to speech")
+    text = st.text_input("Enter text to convert to voice:")
 
     if st.button("Generate Voice"):
         if not text:
@@ -13,11 +13,11 @@ def voice_tab():
 
         try:
             output = replicate.run(
-                "m-a-p/musicgen-tts:943df6ac0e4a6671e4b45772d7a3b55a9eb6b0e824d5c85d609eef2f39b6407c",
-                input={"text": text}
+                "suno-ai/bark:db21e45e5e29cd4f7f565c22b9b0487c745cff650ad2b052d3b48fd55b14870a",
+                input={"prompt": text}
             )
 
-            audio_url = output["audio"]
+            audio_url = output
             st.audio(audio_url)
 
         except Exception as e:
